@@ -5,8 +5,8 @@ metadata:
   name: nfs-standard
 provisioner: nfs.csi.k8s.io
 parameters:
-  server: 172.20.11.10
-  share: /mnt/tank/services/kubernetes/
+  server: 172.20.11.2
+  share: /mnt/tank/services/kubernetes/pvc
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
 mountOptions:
