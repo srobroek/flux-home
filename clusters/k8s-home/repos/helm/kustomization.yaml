@@ -5,7 +5,7 @@ resources:
   # - ./actions-runner-controller.yaml
   # - ./backube.yaml
   # - ./bitnami.yaml
-  # - ./bjw-s.yaml
+  - ./bjw-s.yaml
   # - ./calico.yaml
   # - ./cloudnative-pg.yaml
   - ./csi-driver-nfs.yaml
@@ -13,7 +13,7 @@ resources:
   # - ./dysnix.yaml
   # - ./emqx.yaml
   # - ./external-dns.yaml
-  # - ./external-secrets.yaml
+  - ./external-secrets.yaml
   # - ./grafana.yaml
   # - ./hajimari.yaml
   # - ./ingress-nginx.yaml
