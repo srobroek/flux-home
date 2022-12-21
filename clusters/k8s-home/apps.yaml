@@ -12,10 +12,8 @@ spec:
     name: flux-system
   url: ssh://git@github.com/srobroek/flux-home
 ---
----
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-
   - ./apps/kustomization.yaml
 
