@@ -25,7 +25,10 @@ spec:
   dependsOn:
     - name: external-secrets
   values:
-    connect:
-      credentialsKey: 1password-credentials.json
-      credentialsName: onepassword-connect-secret
+    connect: 
+      credentials:
+        valueFrom:
+          secretKeyRef:
+            name: onepassword-connect-secret
+            key: 1password-credentials.json
 
