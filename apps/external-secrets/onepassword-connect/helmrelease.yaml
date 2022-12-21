@@ -28,7 +28,7 @@ spec:
     connect: 
       credentials:
         valueFrom:
-          secretKeyRef:
-            name: onepassword-connect-secret
-            key: 1password-credentials.json
+        - kind: Secret
+          name: onepassword-connect-secret
+          valuesKey: 1password-credentials.json
 
