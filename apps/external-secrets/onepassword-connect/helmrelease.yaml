@@ -5,6 +5,7 @@ metadata:
   name: onepassword-connect
   namespace: external-secrets
 spec:
+
   interval: 15m
   chart:
     spec:
@@ -24,9 +25,7 @@ spec:
   dependsOn:
     - name: external-secrets
   values:
-    connect.credentials:
-      valuesFrom:
-        secretKeyRef:  
-          name: onepassword-connect-secret
-          key: 1password-credentials.json
+    connect:
+      credentialsKey: 1password-credentials.json
+      credentialsName: onepassword-connect-secret
 
