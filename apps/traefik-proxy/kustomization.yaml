@@ -1,8 +1,10 @@
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: traefik-proxy
 resources:
-  - traefik
-#  - authelia
+  - namespace.yaml
+  - app-secrets.yaml
+  - app-config.yaml 
+  - traefik/ks.yaml
+#  - authelia/ks.yaml
 
