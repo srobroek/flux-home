@@ -1,0 +1,19 @@
+# trash
+.DS_Store
+Thumbs.db
+# temp folders
+.private/
+# terraform
+.terraform
+*.tfvars
+# sops
+.decrypted~*
+*.agekey
+*.pub
+*.key
+*.pem
+# kubernetes
+kubeconfig*
+kubernetes/local
+# extras
+config.xml
