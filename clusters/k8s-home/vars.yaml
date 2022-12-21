@@ -11,7 +11,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./clusters/k8s-home/vars/kustomization.yaml
+  path: ./clusters/k8s-home/vars/
   prune: true
   wait: true
   timeout: 5m0s
