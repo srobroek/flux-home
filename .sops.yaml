@@ -1,0 +1,23 @@
+---
+creation_rules:
+  - path_regex: .*\.sops\.ya?ml
+    encrypted_regex: "^(data|stringData)$"
+    key_groups:
+      - age:
+          #- age1yubikey1qtymzuhxhr06c8yl8a5mgrnjf3vl0p26n6kqp7rvt5qvhwfrjjcxgwdcsph
+          - age1nxf90r5vuaxapj7alklj2mt3udksq873j0vcmgchz9e4y3jmpefqtx6alq
+  - path_regex: .*\.sops\.ini
+    key_groups:
+      - age:
+          #- age1yubikey1qtymzuhxhr06c8yl8a5mgrnjf3vl0p26n6kqp7rvt5qvhwfrjjcxgwdcsph
+          - age1nxf90r5vuaxapj7alklj2mt3udksq873j0vcmgchz9e4y3jmpefqtx6alq
+  - path_regex: .*\.sops\.toml
+    key_groups:
+      - age:
+          #- age1yubikey1qtymzuhxhr06c8yl8a5mgrnjf3vl0p26n6kqp7rvt5qvhwfrjjcxgwdcsph
+          - age1nxf90r5vuaxapj7alklj2mt3udksq873j0vcmgchz9e4y3jmpefqtx6alq
+  - path_regex: .*\.sops\.json
+    key_groups:
+      - age:
+          #- age1yubikey1qtymzuhxhr06c8yl8a5mgrnjf3vl0p26n6kqp7rvt5qvhwfrjjcxgwdcsph
+          - age1nxf90r5vuaxapj7alklj2mt3udksq873j0vcmgchz9e4y3jmpefqtx6alq
